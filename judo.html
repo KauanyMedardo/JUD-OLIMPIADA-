@@ -1,60 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUDÔ</title>
+    <title>Judô</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         header {
             background-color: rgb(168, 153, 153);
             text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
         }
 
         footer {
-            position: absolute;
             width: 100%;
             height: 6em;
-            bottom: 0px;
-            color: blue;
             background-color: aqua;
+            color: blue;
             line-height: 1.5em;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         footer h2 {
-            padding-top: 10px;
+            margin: 0;
             color: white;
-            text-align: center;
         }
 
         footer ul {
-            margin-bottom: 2em;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         footer ul li {
             color: aquamarine;
-            text-align: center;
         }
-        .container{
+
+        .container {
             display: flex;
-            margin: auto;
-
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            flex: 1;
         }
 
-        .container-item{
+        .container-item {
             max-width: 800px;
+            width: 100%;
             background-color: rgb(177, 162, 162);
             border-radius: 25px;
-            line-height: 25px;
-    
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 15px 0;
+        }
+
+        ul {
+            padding-left: 20px;
         }
     </style>
-
 </head>
 
 <body>
     <header>
-        <h1>JUDÕ</h1>
+        <h1>Judô</h1>
         <h2>Jogos Olímpicos de Paris 2024</h2>
     </header>
     <section class="container">
@@ -63,7 +93,7 @@
             <p>O judô é um esporte de combate criado no Japão por Jigoro Kano no final do século XIX. O objetivo é
                 derrotar o adversário utilizando técnicas de projeção, imobilização e estrangulamento, respeitando a filosofia de
                 usar a força do oponente a seu favor. Os atletas competem em um tatame, em categorias de peso, e buscam vencer por
-                **ippon** (uma vitória decisiva), **waza-ari** (quase ippon) ou por pontos acumulados. O judô é conhecido por
+                <strong>ippon</strong> (uma vitória decisiva), <strong>waza-ari</strong> (quase ippon) ou por pontos acumulados. O judô é conhecido por
                 sua ênfase na técnica e na estratégia, e faz parte dos Jogos Olímpicos desde 1964.</p>
         </div>
 
@@ -71,8 +101,7 @@
             <h3>Categorias de Peso:</h3>
             <ul>
                 <li>Homens: Leve (até 66 kg), Meio-leve (até 73 kg), Meio-médio (até 81 kg), Médio (até 90 kg),
-                    Meio-pesado
-                    (até 100 kg), Pesado (acima de 100 kg).</li>
+                    Meio-pesado (até 100 kg), Pesado (acima de 100 kg).</li>
                 <li>Mulheres: Leve (até 52 kg), Meio-leve (até 57 kg), Meio-médio (até 63 kg), Médio (até 70 kg),
                     Meio-pesado (até 78 kg), Pesado (acima de 78 kg).</li>
             </ul>
@@ -81,8 +110,8 @@
     <footer>
         <h2>Olimpíadas<i>Tec</i></h2>
         <ul>
-            <li> <b>Desenvolvido por:</b> Kauany medardo</li>
-            <li><b>Fone:</b>(43)9 9876-4511</li>
+            <li><b>Desenvolvido por:</b> Kauany Medardo</li>
+            <li><b>Fone:</b> (43) 9 9876-4511</li>
             <li><b>Email:</b> Kauany.lmedardo@colegio.pr.gov.br</li>
         </ul>
     </footer>
