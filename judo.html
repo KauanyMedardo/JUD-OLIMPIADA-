@@ -7,106 +7,120 @@
     <title>JUDÔ</title>
     <style>
         body {
-            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+            color: #333;
         }
 
         header {
-            background-color: rgb(151, 151, 151);
+            background-color: #333;
+            color: #fff;
             text-align: center;
             border-radius: 25px;
-
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         footer {
-            position: absolute;
+            position: relative;
             width: 100%;
-            height: 11em;
-            bottom: -25px;
-            color: rgb(12, 8, 8);
-            background-color: rgb(151, 151, 151);
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 25px;
+            text-align: center;
         }
 
         footer h2 {
-            padding-top: 10px;
-            color: rgb(2, 1, 3);
-            text-align: center;
+            color: #ffcc00;
+            margin: 0;
         }
 
         footer ul {
-            margin-bottom: 2em;
-            text-align: center;
-            color: rgb(1, 10, 7);
+            padding: 0;
             list-style: none;
         }
 
         .container {
             display: flex;
-            margin: auto;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
         .container-item {
             max-width: 800px;
-            background-color: rgb(214, 212, 212);
+            background-color: #fff;
             border-radius: 25px;
-            line-height: 25px;
-            padding: 10px;
-            font-size: 18px;
-            width: 90%;
+            line-height: 1.6;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
         }
     </style>
-
 </head>
 
 <body>
     <header>
         <h1>JUDÔ</h1>
         <h2>Jogos Olímpicos de Paris 2024</h2>
-
     </header>
     <main>
         <section class="container">
             <div class="container-item">
                 <h1>Um pouco sobre:</h1>
                 <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a
-                    corpo
-                    dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio
-                    depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô”
-                    significa
-                    “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal pois
-                    requer
-                    um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de
+                    corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio
+                    depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa
+                    “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois
+                    requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de
                     educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais
-                    perigosos
-                    do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20,
-                    tornando-se a primeira arte marcial amplamente praticada fora do Japão.
-                </p>
-
+                    perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20,
+                    tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
             </div>
         </section>
 
         <section class="container">
- 
-            <h1>Medalhistas olimpicos do judo brasileiro </h1>
-            <img src="judo.webp" alt="">
+            <h1>Medalhistas olímpicos do judô brasileiro</h1>
+            <img src="judo.webp" alt="Judô">
         </section>
 
-        <h1>Breve resumo das regras</h1>
-        <p>
-            O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal
-            é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata.
-            O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20 segundos; dois
-            waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro minutos,
-            com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento inadequado.</p>
+        <section class="container">
+            <div class="container-item">
+                <h1>Breve resumo das regras</h1>
+                <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal
+                é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata.
+                O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20 segundos; dois
+                waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro minutos,
+                com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento inadequado.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <h2>Olimpíadas<i>Tec</i></h2>
         <ul>
-            <li> <b>Desenvolvido por:</b> Kauany medardo</li>
-            <li><b>Fone:</b>(43)9 9876-4511</li>
+            <li><b>Desenvolvido por:</b> Kauany Medardo</li>
+            <li><b>Fone:</b> (43) 9 9876-4511</li>
             <li><b>Email:</b> Kauany.lmedardo@colegio.pr.gov.br</li>
         </ul>
     </footer>
-
 </body>
 
 </html>
