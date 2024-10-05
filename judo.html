@@ -7,127 +7,136 @@
     <title>Judô</title>
     <link rel="stylesheet" href="judo.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #b9b9b9;
-            padding: 0;
+         * {
             margin: 0;
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
         }
-        header{
-            background-image: url(background2.png);
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: url('img/kaique_surf1.png');
             background-repeat: no-repeat;
             background-size: cover;
-            height:600px;
+            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        /* Cabeçalho */
-       
-        
 
-        .logo img {
-            height: 60px;
-        }
-
-        .main-nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-nav ul li {
-            margin-right: 30px;
-        }
-
-        .main-nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-
-        .main-nav ul li a:hover,
-        .main-nav ul li a.active {
-            color: #ffcc00;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
-
-        .container-item {
-            flex: 1 1 300px; /* Flexbox para responsividade */
-            background-color: #fff;
-            border-radius: 25px;
-            line-height: 1.6;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-
-        .image-text {
-            display: flex;
-            align-items: center;
-        }
-
-        img {
-            width: 40%;
-            border-radius: 15px;
-            margin-left: 20px;
+        .header-content {
+            text-align: center;
+            color: white;
         }
 
         h1 {
-            color: #fffdfd;
-            text-align: center;
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 300;
         }
 
-        h2 {
-            color: #000;
-            margin: 10px 0;
+        .icon {
+            width: 80px;
+            margin-bottom: 10px;
         }
 
-        p {
-            margin: 10px 0;
+        main {
+            padding: 20px;
+        }
+
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pictogram {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .pictogram:hover {
+            color: rgb(0, 0, 0);
+            transition: 300ms;
+            filter: brightness(80%);
         }
 
         footer {
-            width: 100%;
-            padding: 20px;
+            background-color: #000;
             color: #fff;
-            background-color: #333;
+            padding: 20px;
             text-align: center;
         }
 
-        footer h2 {
-            color: #ffcc00;
-            margin: 0;
+        .footer-content h2 {
+            font-size: 2rem;
         }
 
-        footer ul {
-            padding: 0;
+        ul {
             list-style: none;
+            padding: 0;
         }
 
-        /* Estilos adicionais para melhor apresentação */
-        @media (max-width: 600px) {
-            .main-nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
+        li {
+            margin-bottom: 10px;
+        }
 
-            .main-nav ul li {
-                margin: 10px 0;
-            }
+        b {
+            font-weight: bold;
+        }
 
-            img {
-                width: 60%;
-            }
+        .info-box {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .info-box h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .medalhistas {
+            margin-bottom: 20px;
+        }
+
+        .medalhistas h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .medalhistas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .medalhistas ul li {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .medalhistas ul li strong {
+            font-weight: bold;
         }
     </style>
 </head>
