@@ -19,16 +19,13 @@
             background-image: url('background.png'); /* Substitua pelo caminho correto da imagem */
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 15px 30px;
+            padding: 20px 30px; /* Ajuste o padding para dar mais espaço vertical */
             display: flex;
             align-items: center;
             justify-content: space-between; /* Para melhor espaçamento */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
             width: 100%; /* Garantir que o header ocupe 100% da largura */
-            height: 100px; /* Ajuste a altura conforme necessário */
+            height: auto; /* Altura automática para que se ajuste ao conteúdo */
             box-sizing: border-box; /* Para incluir o padding no cálculo da largura */
         }
 
@@ -140,7 +137,6 @@
 <body>
     <header class="site-header">
         <div class="logo">
-            <!-- Adicione sua imagem de logo aqui -->
             <img src="/img/Fut-icon.png" alt="Logo Olímpico">
         </div>
         <nav class="main-nav">
