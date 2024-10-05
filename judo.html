@@ -7,136 +7,127 @@
     <title>Judô</title>
     <link rel="stylesheet" href="judo.css">
     <style>
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            background-color: #b9b9b9;
+            padding: 0;
+            margin: 0;
+            color: #333;
         }
-
-        header {
-            background-image: url('img/kaique_surf1.png');
+        header{
+            background-image: url(background2.png);
             background-repeat: no-repeat;
             background-size: cover;
-            height: 300px;
+            height:600px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+        /* Cabeçalho */
+       
+        
 
-        .header-content {
-            text-align: center;
-            color: white;
+        .logo img {
+            height: 60px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li {
+            margin-right: 30px;
+        }
+
+        .main-nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #ffcc00;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .container-item {
+            flex: 1 1 300px; /* Flexbox para responsividade */
+            background-color: #fff;
+            border-radius: 25px;
+            line-height: 1.6;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .image-text {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 40%;
+            border-radius: 15px;
+            margin-left: 20px;
         }
 
         h1 {
-            font-size: 4rem;
-            margin: 0;
-            font-weight: 300;
-        }
-
-        .icon {
-            width: 80px;
-            margin-bottom: 10px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .info-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .info-box {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .pictogram {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 30px;
-        }
-
-        .pictogram:hover {
-            color: rgb(0, 0, 0);
-            transition: 300ms;
-            filter: brightness(80%);
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
+            color: #fffdfd;
             text-align: center;
         }
 
-        .footer-content h2 {
-            font-size: 2rem;
+        h2 {
+            color: #000;
+            margin: 10px 0;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        p {
+            margin: 10px 0;
         }
 
-        li {
-            margin-bottom: 10px;
-        }
-
-        b {
-            font-weight: bold;
-        }
-
-        .info-box {
+        footer {
+            width: 100%;
             padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
         }
 
-        .info-box h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-family: 'Josefin Sans', sans-serif;
+        footer h2 {
+            color: #ffcc00;
+            margin: 0;
         }
 
-        .medalhistas {
-            margin-bottom: 20px;
-        }
-
-        .medalhistas h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-
-        .medalhistas ul {
-            list-style-type: none;
+        footer ul {
             padding: 0;
+            list-style: none;
         }
 
-        .medalhistas ul li {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
+        /* Estilos adicionais para melhor apresentação */
+        @media (max-width: 600px) {
+            .main-nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
 
-        .medalhistas ul li strong {
-            font-weight: bold;
+            .main-nav ul li {
+                margin: 10px 0;
+            }
+
+            img {
+                width: 60%;
+            }
         }
     </style>
 </head>
@@ -155,20 +146,19 @@
     </header>
 
     <main>
-        <section class="info-section">
-            <div class="info-box">
+        <section class="container">
+            <div class="container-item">
                 <h2>Um pouco sobre:</h2>
                 <div class="image-text">
                     <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20, tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
-                   </div> </div>
-                   <div class="info-box">
-                    <h2>Os Medalhistas Brasileiros</h2>
                     <img src="judo.webp" alt="Judô">
                 </div>
-                
-               
-           
-            <div class="info-box">
+                <h2>Os Medalhistas Brasileiros</h2>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container-item">
                 <h2>Breve Resumo das Regras</h2>
                 <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata. O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20 segundos; dois waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro minutos, com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento inadequado.</p>
             </div>
